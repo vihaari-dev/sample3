@@ -11,7 +11,7 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 
 | # | Feature | Phase | Status |
 |---|---------|-------|--------|
-| 1 | Stack and architecture | Foundation | planned |
+| 1 | Stack and architecture | Foundation | in-progress |
 | 2 | Coding standards and tooling | Foundation | planned |
 | 3 | Data model | Foundation | planned |
 | 4 | Design system and UI foundation | Foundation | planned |
@@ -24,10 +24,14 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 
 ## Foundations
 
-### 1. Stack and architecture · needs a decision
+### 1. Stack and architecture · in-progress
 Decide the full-stack TypeScript architecture (React frontend, Node.js/Express backend, database, real-time layer, hosting) and scaffold a runnable project so every later slice builds on real structure.
 **Done when:** the stack is recorded in a spec and the empty scaffold boots locally, the dev server starts, and build passes.
-- [ ] Decide the stack (spec): `/architect stack and architecture`
+- [x] Decide the stack (spec): `/architect stack and architecture`
+- [ ] Scaffold from the decision: `/develop stack and architecture`
+- [ ] Verify it: `/check verify stack and architecture`
+- [ ] Test it: `/test stack and architecture`
+spec [0001](../specs/0001-stack-and-architecture.md)
 
 ### 2. Coding standards and tooling
 Capture conventions from the real scaffolded project, then install lint, format, type enforcement, and pre-commit hooks.
